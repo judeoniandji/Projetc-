@@ -1,0 +1,25 @@
+@model gestioncommande.Models.Commande
+
+@{
+    ViewData["Title"] = "Détails de la Commande";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <tr>
+        <th>Date</th>
+        <td>@Model.Date</td>
+    </tr>
+    <tr>
+        <th>Montant</th>
+        <td>@Model.Montant</td>
+    </tr>
+    <tr>
+        <th>Client</th>
+        <td>@Model.Client.Nom</td>
+    </tr>
+</table>
+
+<a href="@Url.Action("Edit", "Commande", new { id = Model.Id })" class="btn btn-warning">Modifier</a>
+<a href="@Url.Action("Index", "Commande")" class="btn btn-secondary">Retour</a>

@@ -1,0 +1,27 @@
+@model IEnumerable<gestioncommande.Models.Client>
+
+    <h2>Liste des Clients</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Pr�nom</th>
+                <th>T�l�phone</th>
+                <th>Adresse</th>
+                <th>Solde</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var client in Model)
+        {
+            <tr>
+                <td>@client.Nom</td>
+                <td>@client.Prenom</td>
+                <td>@client.Telephone</td>
+                <td>@client.Adresse</td>
+                <td>@client.Solde</td>
+            </tr>
+        }
+        </tbody>
+    </table>

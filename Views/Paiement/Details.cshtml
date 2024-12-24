@@ -1,0 +1,28 @@
+@model gestioncommande.Models.Paiement
+
+@{
+    ViewData["Title"] = "Détails du Paiement";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <tr>
+        <th>Date de Paiement</th>
+        <td>@Model.Date</td>
+    </tr>
+    <tr>
+        <th>Montant</th>
+        <td>@Model.Montant</td>
+    </tr>
+    <tr>
+        <th>Client</th>
+        <td>@Model.Client.Nom</td>
+    </tr>
+    <tr>
+        <th>Type de Paiement</th>
+        <td>@Model.TypePaiement</td>
+    </tr>
+</table>
+
+<a href="@Url.Action("Index", "Paiement")" class="btn btn-secondary">Retour</a>

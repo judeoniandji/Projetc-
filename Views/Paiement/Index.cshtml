@@ -1,0 +1,30 @@
+@model IEnumerable<gestioncommande.Models.Paiement>
+
+    <h2>Liste des Paiements</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Montant</th>
+                <th>Date de Paiement</th>
+                <th>Type de Paiement</th>
+                <th>Client</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var paiement in Model)
+        {
+            <tr>
+                <td>@paiement.Montant</td>
+                <td>@paiement.DatePaiement.ToString("dd/MM/yyyy")</td>
+                <td>@paiement.TypePaiement</td>
+                <td>@paiement.Client.Nom</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Paiement", new { id = paiement.Id })">Modifier</a>
+                    <a href="@Url.Action("Details", "Paiement", new { id = paiement.Id })">Détails</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>

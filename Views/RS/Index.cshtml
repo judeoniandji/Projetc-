@@ -1,0 +1,28 @@
+@model IEnumerable<gestioncommande.Models.RS>
+
+    <h2>Liste des Responsables de Stock</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Pr�nom</th>
+                <th>T�l�phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var rs in Model)
+        {
+            <tr>
+                <td>@rs.Nom</td>
+                <td>@rs.Prenom</td>
+                <td>@rs.Telephone</td>
+                <td>
+                    <a href="@Url.Action("Edit", "RS", new { id = rs.Id })">Modifier</a>
+                    <a href="@Url.Action("Details", "RS", new { id = rs.Id })">D�tails</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>

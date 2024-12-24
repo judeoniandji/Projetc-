@@ -1,0 +1,24 @@
+@model gestioncommande.Models.Livraison
+
+@{
+    ViewData["Title"] = "Détails de la Livraison";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <tr>
+        <th>Date de Livraison</th>
+        <td>@Model.DateLivraison</td>
+    </tr>
+    <tr>
+        <th>Adresse</th>
+        <td>@Model.Adresse</td>
+    </tr>
+    <tr>
+        <th>Client</th>
+        <td>@Model.Client.Nom</td>
+    </tr>
+</table>
+
+<a href="@Url.Action("Index", "Livraison")" class="btn btn-secondary">Retour</a>

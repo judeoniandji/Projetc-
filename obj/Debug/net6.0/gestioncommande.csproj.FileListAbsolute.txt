@@ -1,0 +1,6 @@
+C:\Users\KURTIS\source\repos\gestioncommande\obj\Debug\net6.0\gestioncommande.csproj.AssemblyReference.cache
+C:\Users\KURTIS\source\repos\gestioncommande\obj\Debug\net6.0\gestioncommande.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KURTIS\source\repos\gestioncommande\obj\Debug\net6.0\gestioncommande.csproj.CoreCompileInputs.cache
+C:\Users\KURTIS\source\repos\gestioncommande\obj\Debug\net6.0\gestioncommande.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\KURTIS\source\repos\gestioncommande\obj\Debug\net6.0\gestioncommande.RazorAssemblyInfo.cache
+C:\Users\KURTIS\source\repos\gestioncommande\obj\Debug\net6.0\gestioncommande.RazorAssemblyInfo.cs

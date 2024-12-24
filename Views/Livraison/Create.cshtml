@@ -1,0 +1,28 @@
+@model gestioncommande.Models.Livraison
+
+<h2>Cr�er une Livraison</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="DateLivraison" class="control-label"></label>
+        <input asp-for="DateLivraison" class="form-control" />
+        <span asp-validation-for="DateLivraison" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AdresseLivraison" class="control-label"></label>
+        <input asp-for="AdresseLivraison" class="form-control" />
+        <span asp-validation-for="AdresseLivraison" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CommandeId" class="control-label"></label>
+        <select asp-for="CommandeId" class="form-control">
+            <option value="">-- S�lectionner une commande --</option>
+            @foreach (var commande in ViewBag.Commandes as List<GestionCommande.Models.Commande>)
+            {
+            <option value="@commande.Id">@commande.Montant</option>
+            }
+        </select>
+        <span asp-validation-for="CommandeId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Cr�er</button>
+</form>

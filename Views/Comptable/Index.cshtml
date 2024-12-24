@@ -1,0 +1,17 @@
+@model IEnumerable<gestioncommande.Models.Paiement>
+
+    <h2>Liste des Paiements</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Montant</th>
+                <th>Type de Paiement</th>
+                <th>R�f�rence</th>
+                <th>Client</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var paiement in Model)
+        {
+            <tr

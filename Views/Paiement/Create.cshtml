@@ -1,0 +1,35 @@
+@model gestioncommande.Models.Paiement
+
+@{
+    ViewData["Title"] = "Créer un Paiement";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="ClientId">Client</label>
+        <select class="form-control" id="ClientId" name="ClientId">
+            @foreach (var client in ViewBag.Clients as List<GestionDesCommandes.Models.Client>)
+            {
+                <option value="@client.Id">@client.Nom</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="Montant">Montant</label>
+        <input type="number" class="form-control" id="Montant" name="Montant" required />
+    </div>
+
+    <div class="form-group">
+        <label for="TypePaiement">Type de Paiement</label>
+        <select class="form-control" id="TypePaiement" name="TypePaiement">
+            <option value="OM">OM</option>
+            <option value="Wave">Wave</option>
+            <option value="Chèque">Chèque</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Créer</button>
+</form>

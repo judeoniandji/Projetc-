@@ -1,0 +1,14 @@
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\bin\Debug\net6.0\gestioncommande.Data.deps.json
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\bin\Debug\net6.0\gestioncommande.Data.runtimeconfig.json
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\bin\Debug\net6.0\gestioncommande.Data.dll
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\bin\Debug\net6.0\gestioncommande.Data.pdb
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\obj\Debug\net6.0\gestioncommande.Data.csproj.AssemblyReference.cache
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\obj\Debug\net6.0\gestioncommande.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\obj\Debug\net6.0\gestioncommande.Data.AssemblyInfoInputs.cache
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\obj\Debug\net6.0\gestioncommande.Data.AssemblyInfo.cs
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\obj\Debug\net6.0\gestioncommande.Data.csproj.CoreCompileInputs.cache
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\obj\Debug\net6.0\gestioncommande.Data.dll
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\obj\Debug\net6.0\refint\gestioncommande.Data.dll
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\obj\Debug\net6.0\gestioncommande.Data.pdb
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\obj\Debug\net6.0\gestioncommande.Data.genruntimeconfig.cache
+C:\Users\KURTIS\source\repos\gestioncommande\gestioncommande.Data\obj\Debug\net6.0\ref\gestioncommande.Data.dll

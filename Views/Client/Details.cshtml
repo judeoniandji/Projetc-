@@ -1,0 +1,27 @@
+@model gestioncommande.Models.Client
+
+<h2>D�tails du Client</h2>
+
+<div>
+    <h4>Client</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Nom</dt>
+        <dd class="col-sm-10">@Model.Nom</dd>
+
+        <dt class="col-sm-2">Pr�nom</dt>
+        <dd class="col-sm-10">@Model.Prenom</dd>
+
+        <dt class="col-sm-2">T�l�phone</dt>
+        <dd class="col-sm-10">@Model.Telephone</dd>
+
+        <dt class="col-sm-2">Adresse</dt>
+        <dd class="col-sm-10">@Model.Adresse</dd>
+
+        <dt class="col-sm-2">Solde</dt>
+        <dd class="col-sm-10">@Model.Solde</dd>
+    </dl>
+</div>
+<div>
+    <a href="@Url.Action("Index", "Client")" class="btn btn-primary">Retour</a>
+</div>

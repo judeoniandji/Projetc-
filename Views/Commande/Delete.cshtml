@@ -1,0 +1,19 @@
+@model gestioncommande.Models.Commande
+
+@{
+    ViewData["Title"] = "Supprimer une Commande";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Êtes-vous sûr de vouloir supprimer cette commande ?</h4>
+        <p>Une fois supprimée, cette commande ne pourra pas être récupérée.</p>
+    </div>
+
+    <button type="submit" class="btn btn-danger">Supprimer</button>
+    <a href="@Url.Action("Index", "Commande")" class="btn btn-secondary">Annuler</a>
+</form>

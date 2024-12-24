@@ -1,0 +1,28 @@
+@model IEnumerable<gestioncommande.Models.Livraison>
+
+<h2>Liste des Livraisons</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date de Livraison</th>
+            <th>Adresse de Livraison</th>
+            <th>Commande</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var livraison in Model)
+        {
+            <tr>
+                <td>@livraison.DateLivraison.ToString("dd/MM/yyyy")</td>
+                <td>@livraison.AdresseLivraison</td>
+                <td>@livraison.Commande.Montant</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Livraison", new { id = livraison.Id })">Modifier</a>
+                    <a href="@Url.Action("Details", "Livraison", new { id = livraison.Id })">D�tails</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
